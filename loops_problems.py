@@ -60,7 +60,62 @@ while True:
     if i == "no" and i == "No" :
      break
 
+
+
+#fibonacci series==> third number is sum of preceeding two numbers starts from 0 , 1 , 1, 2 , 3 , 5 ......
+a = 0
+b = 1
+n = int(input("Enter the number till you want your fibbonaci series: "))
+if n == 1 :
+   print(1)
+else:
+   print(a) 
+   print(b)
+for i in range (2,n):
+   c = a+b
+   a = b
+   b = c
+   print(c)
+
+#write a programm to check whether a number is prime or not
+num = int(input("enter your digit: "))
+if num<=1: print("It is not a prime number")
+else:
+   for i in range(2,num):
+      if num%i == 0 : print("it is not a prime number")
+      else: 
+         print("It is a prime number")
+         
+#palindrome program using string slicing
+s= input("Enter your object: ")
+rev = s[::-1]
+print("It is palindrome") if s == rev else print("It is not palindrome")
+
+#palindrome numbers using loops and conditional statement
+
+num = int(input("Enter your number: "))
+temp = num
+rev = 0
+while num>0:
+  digit=num%10
+  rev = rev*10 + digit
+  num = num//10
+
+if rev == temp:
+   print("it is palindrome number")
+else :
+   print("it is not palindrome")
+
+
+
+
+
+
+
     
+
+    
+
 
 
         
